@@ -1,0 +1,109 @@
+-------------------------------------------------------
+DeskQuote 1.0 by Dan Gray (dan@dangray.org)
+----------------------------
+ Supports (since DeskTao 1.0):
+    Custom Fonts+Colors
+    Basic Text Alignment (Monospace fonts look best)
+    Custom Quotefile
+    Custom String Length
+	
+Contents:
+
+1. Intro
+2. File formats
+3. Installation
+4. How to use DeskTao
+5. The future
+
+1. Introduction
+-----------------------------
+This program used to be called DeskTao and display Quotes on your desktop. 
+From this release it is renamed DeskQuotes and comes as a seperate Sensor 
+and Display, you can use the default DeskTao display or construct a custom 
+one as you wish.
+
+This is DeskQuotes, a sensor to return random quotes from a file to a
+gdesklets display on your desktop. It will return quotes from any properly
+formatted file (similar to fortune files).
+
+Although this program works a little like a traditional fortune program
+there are some differences with the format of the source text file and the
+search program is less efficient (i.e. more basic), it is however very
+simple and should work on any system and you won't need to run any extra 
+indexing functions on customised quote files you may want to use.
+
+ The processor usage is higher than I would like, but then again I use 
+update times of around once every five minutes, so it's not an issue! If 
+you really want to update the quote every 10 seconds it's your call, but 
+you'll take a performance hit!!
+
+Please bare with me, this is my first Python program!
+
+2. File formats
+--------------------
+The file format is similar to a fortune file, the header consists of:
+
+  First line - 	Delimiter
+  Second line - File Description
+  Third Line - 	Number of lines counting from 0 to the DELIMITER AT THE 
+		END OF THE SECOND TO LAST QUOTE!!
+  Forth Line -	Delimiter again
+  Then your quotes, separated by delimiters.
+  AND A FINAL DELIMITER
+
+So a complete file will look like this:
+------------------------------------------
+%
+Quotes from the Tao, S.Mitchel translation.
+10
+%
+I
+
+The tao that can be told
+is not the eternal Tao
+The name that can be named
+is not the eternal Name.
+%
+The last quote
+%
+------------------------------------------
+   				...etc
+
+3. Installation
+-------------------
+ Run the script,  
+ Once the program is installed, go to the directory containing your 
+DeskQuotes display and type 'gdesklets displayname.desklet' and you 
+ should be up and running.
+
+
+4. How to use it
+-----------------------
+
+ The program will run in it's default mode at first. You can use the 
+configuration dialog to alter:
+
+  A. The Font and it's colour. If you're center aligning i'd recommend a 
+	courier or monotype font to get reasonable looking results
+
+  B. The time between refreshing the quote. The program is quite 
+processor-intensive when it's parsing through the file and fetching your 
+quote, but then again if you do it once every 10 minutes you shouldn't 
+notice.
+
+  C. The quotefile. The file that comes with the tao display is called
+'tao' and used by default. Read the formatting advice above and create
+your own themed display. Send it to me and i'll put it on the website for
+others to download.
+
+  D. Lenght of line. Obviously different font sizes will take up more or 
+less room. This option will allow you to alter the length of individual 
+lines returned by DeskTao to get eye-pleasing results.
+
+  E. Text alignment, as I wrote above, if using centering than choose a 
+monospace font for best results. If alignment ever gets built into 
+gdesklets i'll change this!
+
+5. The Future
+------------------------
+ Suggestions welcome!
