@@ -6,16 +6,17 @@ Summary:	DeskQuote - returning random quote from appropriately formatted text fi
 Summary(pl):	DeskQuote - wybieranie losowego cytatu z odpowiednio sformatowanego pliku
 Name:		gDesklets-%{pname}
 Version:	1.2
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Applications
 Source0:	http://gdesklets.gnomedesktop.org/files/%{pname_file}-%{version}.tar.bz2
 # Source0-md5:	78d59caa60be2821a0dcd0b45a806d9d
 Source1:	%{name}-README
 URL:		http://gdesklets.gnomedesktop.org/categories.php?func=gd_show_app&gd_app_id=62
-BuildRequires:	python >= 2.3
+BuildRequires:	python >= 1:2.3
 BuildRequires:	python-pygtk-gtk >= 1.99.14
 Requires:	gDesklets
+%pyrequires_eq	python-libs
 Provides:	gDesklets-sensor
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
