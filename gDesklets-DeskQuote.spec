@@ -3,7 +3,8 @@
 %define	pname		DeskQuote
 %define	pname_file	deskquote
 
-Summary:	DeskQuotes takes an approptiately formatted text file (details in readme) and returns a random quote from that file.
+Summary:	DeskQuote - returning random quote from appropriately formatted text file
+Summary(pl):	DeskQuote - wybieranie losowego cytatu z odpowiednio sformatowanego pliku
 Name:		gDesklets-%{pname}
 Version:	1.0
 Release:	1
@@ -23,8 +24,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define _displaysdir	%{_datadir}/gdesklets/Displays
 
 %description
-DeskQuotes takes an approptiately formatted text file (details in
+DeskQuote takes an appropriately formatted text file (details in
 readme) and returns a random quote from that file.
+
+%description -l pl
+DeskQuote przyjmuje odpowiednio sformatowany plik tekstowy (szczegó³y
+w readme) i zwraca wybrany losowo z tego pliku cytat.
 
 %prep
 %setup -q -n %{pname_file}-%{version}
