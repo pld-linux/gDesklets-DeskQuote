@@ -1,4 +1,4 @@
-%include        /usr/lib/rpm/macros.python
+%include	/usr/lib/rpm/macros.python
 
 %define	pname		DeskQuote
 %define	pname_file	deskquote
@@ -17,7 +17,7 @@ BuildRequires:	python >= 2.3
 BuildRequires:	python-pygtk >= 1.99.14
 Requires:	gDesklets
 Provides:	gDesklets-sensor
-BuildArch:      noarch
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define	_sensorsdir	%{_datadir}/gdesklets/Sensors
