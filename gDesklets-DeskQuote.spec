@@ -1,6 +1,6 @@
 
-%define	pname		DeskQuote
-%define	pname_file	deskquote
+%define		pname		DeskQuote
+%define		pname_file	deskquote
 
 Summary:	DeskQuote - returning random quote from appropriately formatted text file
 Summary(pl):	DeskQuote - wybieranie losowego cytatu z odpowiednio sformatowanego pliku
@@ -20,8 +20,8 @@ Provides:	gDesklets-sensor
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define	_sensorsdir	%{_datadir}/gdesklets/Sensors
-%define _displaysdir	%{_datadir}/gdesklets/Displays
+%define		_sensorsdir	%{_datadir}/gdesklets/Sensors
+%define		_displaysdir	%{_datadir}/gdesklets/Displays
 
 %description
 DeskQuote takes an appropriately formatted text file (details in
