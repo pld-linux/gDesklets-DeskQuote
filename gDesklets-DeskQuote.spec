@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.python
 
 %define	pname		DeskQuote
 %define	pname_file	deskquote
