@@ -3,7 +3,7 @@
 %define		pname_file	deskquote
 
 Summary:	DeskQuote - returning random quote from appropriately formatted text file
-Summary(pl.UTF-8):   DeskQuote - wybieranie losowego cytatu z odpowiednio sformatowanego pliku
+Summary(pl.UTF-8):	DeskQuote - wybieranie losowego cytatu z odpowiednio sformatowanego pliku
 Name:		gDesklets-%{pname}
 Version:	1.2
 Release:	3
